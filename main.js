@@ -1,4 +1,4 @@
-const bikes = [
+/* const bikes = [
     {
         "name": "bike_1",
         "weight": "30"
@@ -27,9 +27,33 @@ function minoWeight() {
 
         }
     }
-    return { minWeight, bikeName }
+    return {minWeight, bikeName}
 }
 
 const bikeList = minoWeight();
 document.getElementById("bike_name").innerHTML = bikeList.bikeName
 document.getElementById("bike_weight").innerHTML = bikeList.minWeight
+ */
+
+const teams = [
+    {
+        "name": "Inter",
+        "puntiFatti": 0,
+        "falliSubiti": 0
+    },
+    {
+        "name": "Juventus",
+        "puntiFatti": 0,
+        "falliSubiti": 0
+    },
+    {
+        "name": "Milan",
+        "puntiFatti": 0,
+        "falliSubiti": 0
+    },
+    {
+        "name": "Roma",
+        "puntiFatti": 0,
+        "falliSubiti": 0
+    }
+]
