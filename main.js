@@ -19,13 +19,15 @@ const bikes = [
 
 function minoWeight() {
     let minWeight = 0;
+    let bikeName;
     for (let i = 0; i < bikes.length; i++) {
         if (bikes[i].weight < minWeight | minWeight == 0) {
             minWeight = bikes[i].weight;
+            bikeName = bikes[i].name;
+
         }
     }
-    return minWeight;
+    return bikeName;
 }
-
-console.log(minoWeight());
+document.getElementById("bike_name").innerHTML = minoWeight();
 
