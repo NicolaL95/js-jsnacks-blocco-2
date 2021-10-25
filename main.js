@@ -57,10 +57,11 @@ const teams = [
         falliSubiti: 0
     }
 ]
-
+let a = [];
 for (let i = 0; i < teams.length; i++) {
     teams[i].falliSubiti = Math.floor(Math.random() * 100) + 1;
     teams[i].puntiFatti = Math.floor(Math.random() * 100) + 1;
-
+    const { name, falliSubiti } = teams[i];
+    a[i] = { name, falliSubiti };
 }
-console.log(teams)
+console.log(a)
