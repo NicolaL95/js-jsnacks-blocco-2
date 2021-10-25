@@ -27,7 +27,9 @@ function minoWeight() {
 
         }
     }
-    return bikeName;
+    return { minWeight, bikeName }
 }
-document.getElementById("bike_name").innerHTML = minoWeight();
 
+const bikeList = minoWeight();
+document.getElementById("bike_name").innerHTML = bikeList.bikeName
+document.getElementById("bike_weight").innerHTML = bikeList.minWeight
