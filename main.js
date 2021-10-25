@@ -37,23 +37,30 @@ document.getElementById("bike_weight").innerHTML = bikeList.minWeight
 
 const teams = [
     {
-        "name": "Inter",
-        "puntiFatti": 0,
-        "falliSubiti": 0
+        name: "Inter",
+        puntiFatti: 0,
+        falliSubiti: 0
     },
     {
-        "name": "Juventus",
-        "puntiFatti": 0,
-        "falliSubiti": 0
+        name: "Juventus",
+        puntiFatti: 0,
+        falliSubiti: 0
     },
     {
-        "name": "Milan",
-        "puntiFatti": 0,
-        "falliSubiti": 0
+        name: "Milan",
+        puntiFatti: 0,
+        falliSubiti: 0
     },
     {
-        "name": "Roma",
-        "puntiFatti": 0,
-        "falliSubiti": 0
+        name: "Roma",
+        puntiFatti: 0,
+        falliSubiti: 0
     }
 ]
+
+for (let i = 0; i < teams.length; i++) {
+    teams[i].falliSubiti = Math.floor(Math.random() * 100) + 1;
+    teams[i].puntiFatti = Math.floor(Math.random() * 100) + 1;
+
+}
+console.log(teams)
